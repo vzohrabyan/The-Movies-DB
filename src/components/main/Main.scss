@@ -1,0 +1,90 @@
+main {
+    background-color: rgb(16, 16, 24);
+    padding: 24px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 15px;
+        p {
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+    }
+    .movie {
+        width: 240px;
+        height: 420px;
+        background-color: rgb(37, 37, 48);
+        padding: 20px;
+        position: relative;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+
+        .rating {
+            width: 200px;
+            position: absolute;
+            bottom: 5px;
+            display: flex;
+            justify-content: center;
+            .star {
+                color: gold;
+                margin-right: 5px;
+            }
+        }
+    }
+    .page {
+        display: flex;
+        margin-top: 50px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        &-number {
+            border-radius: 50%;
+            background-color: gray;
+            cursor: pointer;
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .movie:hover {
+        background-color: rgb(71, 71, 93);
+        img,p {
+            transform: scale(1.1);
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
+    .page-number:hover {
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .movie {
+        width: 120px !important;
+        height: 210px !important;
+        padding: 10px !important;
+        img {
+            width: 100px !important;
+            height: 150px !important;
+        }
+        p {
+            font-size: 7px !important;
+            margin-top: 9px !important;
+        }
+        .rating {
+            width: 100px !important;
+            position: absolute !important;
+            bottom: 5px !important;
+        }
+    }
+}

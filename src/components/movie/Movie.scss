@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@200&display=swap');
+
+.movie-main {
+    width: 80%;
+    background-color: rgb(2, 2, 9);
+    min-height: 100vh;
+    padding: 20px;
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    &-video {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        iframe {
+            width: 60%;
+        }
+    }
+    p {
+        margin-top: 20px;
+        font-family: 'Ysabeau Office', sans-serif;
+    } 
+}
